@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/fahrenheitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="Degrees Fahrenheit:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/fahrenheitField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fahrenheitLabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fahrenheitLabel"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/celsiusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fahrenheitField"
+        android:layout_below="@+id/fahrenheitField"
+        android:layout_marginTop="14dp"
+        android:inputType="numberSigned"
+        android:text="Degrees Celsius:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/celsiusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusLabel"
+        android:layout_alignRight="@+id/fahrenheitField"
+        android:layout_below="@+id/celsiusLabel"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/clearFields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/celsiusField"
+        android:layout_below="@+id/celsiusField"
+        android:layout_marginTop="14dp"
+        android:onClick="clearFieldsClicked"
+        android:text="Clear Fields" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusField"
+        android:layout_alignTop="@+id/clearFields"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/Submit01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fahrenheitField"
+        android:layout_alignRight="@+id/fahrenheitField"
+        android:onClick="fahrenheitFieldOnClicked"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/Submit02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearFields"
+        android:layout_alignRight="@+id/celsiusField"
+        android:onClick="celsiusFieldOnClicked"
+        android:text="Submit" />
+
+</RelativeLayout>

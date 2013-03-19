@@ -1,0 +1,10 @@
+[info] Packaging C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\temperature-converter-scala-0.1.apk
+[debug] Using keystore: C:\Users\shell\Desktop\IDE\sdk\.android\debug.keystore
+[debug] Packaging temperature-converter-scala-0.1.apk
+[debug] C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\resources.apk:
+[debug] => res/layout/main.xml
+[debug] => AndroidManifest.xml
+[debug] => resources.arsc
+[debug] C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\classes.dex => classes.dex
+[debug] C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\classes.min.jar:
+[debug] => library.properties
