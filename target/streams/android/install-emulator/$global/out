@@ -1,4 +1,0 @@
-[debug] C:\Users\shell\Desktop\IDE\sdk\platform-tools\adb -e install -r  C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\temperature-converter-scala-0.1.apk
-[info] 850 KB/s (130657 bytes in 0.150s)
-[info] 	pkg: /data/local/tmp/temperature-converter-scala-0.1.apk
-[info] Success

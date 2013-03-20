@@ -1,2 +1,0 @@
-[debug] C:\Users\shell\Desktop\IDE\sdk\platform-tools\adb -e shell am start -a android.intent.action.MAIN -n luc.edu.temp/.MainActivity
-[info] Starting: Intent { act=android.intent.action.MAIN cmp=luc.edu.temp/.MainActivity }

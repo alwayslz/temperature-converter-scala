@@ -1,3 +1,0 @@
-[debug] C:\Users\shell\Desktop\IDE\sdk\platform-tools\dx.bat --dex --no-locals --num-threads=4 --output=C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\classes.dex C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\classes.min.jar
-[info] Dexing C:\Users\shell\Google Drive\2013SPRING\RA\temperature-converter-scala\target\classes.dex
-[debug] 

@@ -1,6 +1,5 @@
 package luc.edu.temp
 
-
 /**
  * @author shell
  * * <p>
@@ -17,15 +16,12 @@ package luc.edu.temp
  * K to F...).
  * </p>
  */
-class TemperatureConverter (var degreesCelsius:Double){
-  
-	def getFahrenheit = degreesCelsius * 9 / 5 + 32
-	
-	
-	def setFahrenheit(value : Double)
-	{
-	  degreesCelsius = (value - 32) * 5 / 9
-	}
-	
-	
+class TemperatureConverter(var degreesCelsius: Double) {
+
+  def getFahrenheit() = degreesCelsius * 9 / 5 + 32
+
+  def setFahrenheit(value: Double) {
+    degreesCelsius = (value - 32) * 5 / 9
+  }
+
 }

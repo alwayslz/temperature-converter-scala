@@ -1,9 +1,0 @@
-generate-typed-resources
-exit
-generate-typed-resources
-exit
-compile
-android:start-emulator
-compile
-android:start-emulator
-generate-typed-resources
