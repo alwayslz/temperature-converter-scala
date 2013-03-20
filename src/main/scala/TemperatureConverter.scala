@@ -16,7 +16,13 @@ package luc.edu.temp
  * K to F...).
  * </p>
  */
-class TemperatureConverter(var degreesCelsius: Double) {
+class TemperatureConverter {
+
+  private var degreesCelsius: Double = 22
+
+  def setCelsius(value: Double) { degreesCelsius = value }
+
+  def getCelsius() = degreesCelsius
 
   def getFahrenheit() = degreesCelsius * 9 / 5 + 32
 

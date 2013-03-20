@@ -19,14 +19,15 @@ class MainActivity extends Activity with TypedActivity {
   lazy val textview = findView(TR.textview)
   lazy val fahrenheitField = findView(TR.fahrenheitField)
   lazy val celsiusField = findView(TR.celsiusField)
-  lazy val converter = new TemperatureConverter(22)
+
+  lazy val converter = new TemperatureConverter
 
   override def onCreate(bundle: Bundle) {
     super.onCreate(bundle)
     setContentView(R.layout.main)
     textview.setText("Code in Scala")
-    fahrenheitField.setText(converter.getFahrenheit.toString())
-    celsiusField.setText(converter.degreesCelsius.toString())
+    fahrenheitField.setText(converter.getFahrenheit.toString)
+    celsiusField.setText(converter.getCelsius.toString)
     celsiusField.setOnEditorActionListener(
       new OnEditorActionListener() {
         def onEditorAction(textView: TextView, actionId: Int, e: KeyEvent) = {
@@ -64,13 +65,13 @@ class MainActivity extends Activity with TypedActivity {
   }
 
   def celsiusFieldOnClicked(view: View) {
-    converter.degreesCelsius = celsiusField.getText.toString().toDouble
+    converter.setCelsius(celsiusField.getText.toString.toDouble)
     fahrenheitField.setText(converter.getFahrenheit.toString)
 
   }
   def fahrenheitFieldOnClicked(view: View) {
-    converter.setFahrenheit(fahrenheitField.getText.toString().toDouble)
-    celsiusField.setText(converter.degreesCelsius.toString)
+    converter.setFahrenheit(fahrenheitField.getText.toString.toDouble)
+    celsiusField.setText(converter.getCelsius.toString)
   }
 
 }
